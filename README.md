@@ -33,10 +33,9 @@ Contributing
 
 I love pull requests, so send me good ones. Please be sure to fully describe your changes!
 
-License
-=======
 
 The MIT License (MIT)
+=====================
 
 Copyright (c) 2013 Nathan Wittstock
 
