@@ -1,0 +1,17 @@
+{
+  "name": "occupied",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Nathan Wittstock <code@fardogllc.com>",
+  "description": "A small Express app for Raspberry Pi and PiFace for checking an occupation sensor.",
+  "scripts": {
+    "start": "coffee app.coffee"
+  },
+  "dependencies": {
+    "express": "3.3.*",
+    "ejs": "*",
+    "caf_piface": "*",
+    "node-sass": "*",
+    "coffee-script":"1.6.*"
+  }
+}
