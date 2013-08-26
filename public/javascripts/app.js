@@ -34,8 +34,8 @@ var updateDisplay = function(jsonData) {
 		$('#connection-error').remove();
 		var occupiedText = "Unoccupied";
 		if (jsonData.occupied) occupiedText = "Occupied";
-		occupiedText = occupiedText + ' (' + Math.round(jsonData.confidence) + '%)';
 		$('#content h1').text(occupiedText);
+		occupiedText = occupiedText + ' (' + Math.round(jsonData.confidence) + '%)';
 		$('title').text(occupiedText);
 		$('#confidence').text(Math.round(jsonData.confidence));
 	}
