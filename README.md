@@ -25,7 +25,7 @@ npm rebuild spi
 npm rebuild caf_piface
 ```
 
-From there, you should be able to execute a `coffee app.coffee` as your *root* user, and SWITCH 1 should be tied into your occupation sensor, LED 7 to your occupation light. Hit the interface at *http://<your_rpi_ip>:3000 and go!
+From there, you should be able to execute a `coffee app.coffee` as your *root* user, and SWITCH 1 should be tied into your occupation sensor, LED 7 to your occupation light. Hit the interface at *http://your_rpi_ip:3000* and go!
 
 
 Contributing
