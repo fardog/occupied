@@ -23,7 +23,7 @@ $(document).foundation();
 
 var updateDisplay = function(jsonData) {
 	if (!jsonData) {
-		$('title').text("Error retrieving occupation status.");
+		$('title').text("Error!");
 		if($('#connection-error').length == 0)
 			$('#content>div').append(
 					$('<div>', { 'class': "alert-box alert",
@@ -34,6 +34,7 @@ var updateDisplay = function(jsonData) {
 		$('#connection-error').remove();
 		var occupiedText = "Unoccupied";
 		if (jsonData.occupied) occupiedText = "Occupied";
+		occupiedText = occupiedText + '(' + Math.round(jsonData.confidence) + ')';
 		$('#content h1').text(occupiedText);
 		$('title').text(occupiedText);
 		$('#confidence').text(Math.round(jsonData.confidence));
